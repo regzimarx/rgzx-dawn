@@ -1459,5 +1459,84 @@
         "info": "t:settings_schema.cart.settings.cart_drawer.collection.info"
       }
     ]
+  },
+  {
+    "name": "Additional settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_page_speed_optimizer",
+        "label": "Enable speed optimizer?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "override_body_font",
+        "label": "Override body font?",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "custom_body_font",
+        "label": "Custom body font name"
+      },
+      {
+        "type": "checkbox",
+        "id": "override_header_font",
+        "label": "Override header font?",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "custom_header_font",
+        "label": "Custom header font name"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_header_inline_search",
+        "label": "Enable header inline search?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "use_flicking_product_media_gallery",
+        "label": "Use flicking product media gallery?",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Free shipping bar"
+      },
+      {
+        "type": "number",
+        "id": "threshold",
+        "label": "Free shipping threshold"
+      },
+      {
+        "type": "liquid",
+        "id": "free_shipping_more",
+        "label": "Before Free Shipping"
+      },
+      {
+        "type": "liquid",
+        "id": "free_shipping_text",
+        "label": "Free shipping text"
+      },
+      {
+        "type": "text",
+        "id": "upsell_heading",
+        "label": "Upsell heading"
+      },
+      {
+        "type": "product_list",
+        "id": "upsell_list",
+        "label": "Upsell list"
+      },
+      {
+        "type": "text",
+        "id": "usp_text",
+        "label": "USP text"
+      }
+    ]
   }
 ]

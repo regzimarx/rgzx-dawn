@@ -11,9 +11,12 @@
     }
   }
 {%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
-    {{ section.settings.custom_liquid }}
+
+<div class="{{ section.settings.custom_class }}">
+  <div class="color-{{ section.settings.color_scheme }} gradient">
+    <div class="section-{{ section.id }}-padding">
+      {{ section.settings.custom_liquid }}
+    </div>
   </div>
 </div>
 
@@ -23,6 +26,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom class"
+    },
     {
       "type": "liquid",
       "id": "custom_liquid",
