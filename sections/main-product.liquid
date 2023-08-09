@@ -106,7 +106,11 @@
                 -%}
               </div>
               {%- if product.quantity_price_breaks_configured? -%}
+<<<<<<< HEAD
                 <div class="volume-pricing-note">
+=======
+                <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
+>>>>>>> 951ac28f3bc099baf281d2cd08bc4a1d45704efa
                   <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                 </div>
               {%- endif -%}
@@ -334,7 +338,11 @@
                     </price-per-item>
                   {%- endif -%}
                 </div>
+<<<<<<< HEAD
                 <div class="quantity__rules caption no-js-hidden">
+=======
+                <div class="quantity__rules caption no-js-hidden" id="Quantity-Rules-{{ section.id }}">
+>>>>>>> 951ac28f3bc099baf281d2cd08bc4a1d45704efa
                   {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
                     <span class="divider">
                       {{-

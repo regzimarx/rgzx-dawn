@@ -212,7 +212,11 @@
             </button>
           {%- endif -%}
           {%- if variant.available == false or quantity_rule_soldout -%}
+<<<<<<< HEAD
             <span class="variant-item__sold-out h4"> {{ 'products.product.sold_out' | t }} </span>
+=======
+            <span class="variant-item__sold-out"> {{ 'products.product.sold_out' | t }} </span>
+>>>>>>> 951ac28f3bc099baf281d2cd08bc4a1d45704efa
           {%- else -%}
             {% comment %} TODO: Remove theme check {% endcomment %}
             {% # theme-check-disable %}
